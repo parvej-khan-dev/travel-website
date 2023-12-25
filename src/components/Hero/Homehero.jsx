@@ -14,11 +14,11 @@ const Homehero = () => {
           alt="Vector"
           src="./Images/vector.svg"
         />
-        <p className="w-[480px] md:w-[637px] mb-10  [font-family:'Poppins-Bold',Helvetica] font-bold text-white text-[48.5px] md:text-[58px] tracking-[0] leading-[67.9px]">
+        <h1 className="  md:w-[637px] mb-10  [font-family:'Poppins-Bold',Helvetica] font-bold text-white text-[38.5px] md:text-[58px] tracking-[0] leading-[67px] ">
           No matter where you’re going to, we’ll take you there
-        </p>
+        </h1>
 
-        <div className="md:w-[720px] w-[450px]  h-[250px] md:h-[70px]  md:ml-[65px] flex p-2 justify-around md:items-center flex-col md:flex-row bg-[#f3f3f399] rounded-[5.22px] backdrop-blur-[-35.52px] backdrop-brightness-[50%] ">
+        <div className="md:w-[720px]   h-[250px] md:h-[70px]  md:ml-[65px] flex p-2 justify-around md:items-center flex-col md:flex-row bg-[#f3f3f399] rounded-[5.22px] backdrop-blur-[-35.52px] backdrop-brightness-[50%] ">
           <p className="px-5 pt-5 md:p-1">Where To?</p>
           {/* large screen */}
           <div className="hide md:h-[33px] md:w-[2px] md:border-round md:bg-white mx-[10px]" />
@@ -34,8 +34,8 @@ const Homehero = () => {
             />
           </div>
           {/* large screen */}
-           <div className="hide md:h-[33px] md:w-[2px] md:border-round md:bg-white mx-[10px]" />
-           {/* mobile devices line  */}
+          <div className="hide md:h-[33px] md:w-[2px] md:border-round md:bg-white mx-[10px]" />
+          {/* mobile devices line  */}
           <hr className="md:hidden w-full border-t-2 border-gray-300 my-2 " />
 
           <div className="hero-dropdown relative px-5 pb-5 md:p-1">

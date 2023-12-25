@@ -12,6 +12,7 @@
   --sec-color: #6246e5;
   ---bg-color: #df6951;
   --prim-font: "Poppins";
+  --gradient: #a7327a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,8 +24,11 @@
 }
 
 body {
-  font-family: "Poppins-Bold, Helvetica";
+  font-family: "Poppins", sans-serif;
   color: #fff;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 .container {
@@ -91,7 +95,9 @@ svg {
   margin: 0px 60px;
 }
 
-section.category-section {
+/* category section  */
+
+.category-section {
   margin: 40px auto;
   /* padding: 20px auto; */
   max-width: 1190px;
@@ -100,8 +106,9 @@ section.category-section {
 h2.title {
   color: #181e4b;
   text-align: center;
-  font-family: Poppins, SANS-SERIF;
+  /* font-family: Poppins, SANS-SERIF; */
   font-size: 50px;
+  margin-bottom: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -119,7 +126,7 @@ p.section-title {
   line-height: normal;
 }
 
-h2.title.text-center {
+h2.title {
   color: #181e4b;
   text-align: center;
   font-family: "Poppins-Bold", Helvetica;
@@ -153,7 +160,7 @@ p.section-title {
   text-align: center;
   flex-direction: column;
   margin: 20px;
-  padding:20px;
+  padding: 20px;
 
   align-items: center;
   gap: 20px;
@@ -172,7 +179,10 @@ p.section-title {
     0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 }
 
-.card-item-1, .card-item-2, .card-item-3, .card-item-4{
+.card-item-1,
+.card-item-2,
+.card-item-3,
+.card-item-4 {
   flex-flow: 1;
   flex-basis: 250px;
 }
@@ -199,7 +209,50 @@ p.section-title {
   margin-bottom: 10px;
 }
 
+/* section 2  */
+.image-container {
+  position: relative;
+  display: flex;
+  margin: 20px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%; /* Adjust as needed */
+}
 
+.large-image {
+  width: 65%; /* Adjust size of large image */
+  z-index: 2; /* Ensure it's above other elements */
+  border-top-left-radius: 175px;
+  border-top-right-radius: 175px;
+}
+
+.small-image {
+  width: 20%; /* Adjust size of small images */
+  position: absolute;
+}
+
+.small-image1 {
+  width: 214px;
+  top: 7rem;
+  left: 2rem;
+  z-index: 3;
+}
+
+.small-image2 {
+  width: 120px;
+  top: -3rem;
+  left: 10rem;
+  z-index: 3;
+}
+
+/* home page 3 section flight */
+section.icons-box {
+  display: flex;
+  max-width: 1190px;
+  margin: 30px auto;
+  justify-content: center;
+  align-items: center;
+}
 
 /* For mobile devices */
 @media (max-width: 768px) {
