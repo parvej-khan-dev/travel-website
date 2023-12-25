@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  ---primary-color: white;
+  --sec-color: #6246e5;
+  ---bg-color: #df6951;
+  --prim-font: "Poppins";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +23,184 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  font-family: "Poppins-Bold, Helvetica";
+  color: #fff;
+}
+
+.container {
+  max-width: 1920px;
+  max-height: 7815px;
+}
+
+.primeButton {
+  color: var(---primary-color);
+  padding: 8px 15px;
+  border-radius: 10px;
+  background: #df6951;
+  padding: 10px 30px;
+  box-shadow: 0px 20px 35px 0px rgba(223, 105, 81, 0.15);
+}
+
+.logoSide {
+  position: relative;
+}
+
+svg {
+  position: absolute;
+  top: 19px;
+  left: 27px;
+  width: 78px;
+}
+
+.logo {
+  color: #fff;
+  text-align: center;
+  font-family: Volkhov;
+  font-size: 31.622px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.hero {
+  min-height: 712px;
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      0deg,
+      rgba(0, 0, 0, 0.33) 0%,
+      rgba(0, 0, 0, 0.33) 100%
+    ),
+    url("../../public/Images/hero-home.png"), lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.vertical-line {
+  height: 33px;
+  width: 2px;
+  border-radius: 25px;
+  background: #d0d0d0;
+  /* background-color: #fff; */
+  margin: 0 10px;
+}
+
+.hero-content {
+  width: 80%;
+  margin: 0px 60px;
+}
+
+section.category-section {
+  margin: 40px auto;
+  /* padding: 20px auto; */
+  max-width: 1190px;
+}
+
+h2.title {
+  color: #181e4b;
+  text-align: center;
+  font-family: Poppins, SANS-SERIF;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+p.section-title {
+  color: #df6951;
+  text-align: center;
+  font-family: Poppins;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+h2.title.text-center {
+  color: #181e4b;
+  text-align: center;
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+p.section-title {
+  color: #df6951;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.card-section {
+  display: flex;
+  margin: 40px 0px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin: 20px;
+  padding:20px;
+
+  align-items: center;
+  gap: 20px;
+}
+
+.card:hover {
+  border-radius: 36px;
+  padding: 20px;
+  transition: 0.2s;
+  background: #fff;
+  box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0),
+    0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01),
+    0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02),
+    0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+
+.card-item-1, .card-item-2, .card-item-3, .card-item-4{
+  flex-flow: 1;
+  flex-basis: 250px;
+}
+
+.card-heading {
+  color: var(--text-heading-color, #1e1d4c);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.card .card-description {
+  color: #4b4f73;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+}
+
+.card img {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 10px;
+}
+
+
+
+/* For mobile devices */
+@media (max-width: 768px) {
 }
